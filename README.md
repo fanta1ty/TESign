@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# TESign
+E-Sign component for iOS written in Swift
 
-You can use the [editor on GitHub](https://github.com/fanta1ty/TESign/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[![Platform](https://img.shields.io/cocoapods/p/TESign)](https://cocoapods.org/pods/TESign)
+[![Swift 5.0](https://img.shields.io/badge/Swift-5.0-brightgreen)](https://developer.apple.com/swift/)
+[![Version](https://img.shields.io/badge/pod-1.4-informational)](https://cocoapods.org/?q=TESign)
+[![License](http://img.shields.io/badge/license-MIT-blue)](https://github.com/fanta1ty/TESign/blob/master/LICENSE)
+[![Email](https://img.shields.io/badge/contact-@thinhnguyen12389@gmail.com-blue)](thinhnguyen12389@gmail.com)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Installation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+##### [CocoaPods](http://cocoapods.org)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+TESign is available through CocoaPods. To install it, simply add the following line to your Podfile:
+```ruby
+pod "TESign"
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+##### Manual Installation
 
-### Jekyll Themes
+Just drag and drop the files in `TESign/TESign` folder into your project
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fanta1ty/TESign/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+####  Description
+TESign helps user can draw the signature smoothly either by finger or by Apple pencil, he/she can also save and load the signature.
+TESign works on both iPhone and iPad and it can extract the signature as Image.
 
-### Support or Contact
+### License
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+TESign is available under the MIT license. See the [LICENSE](https://github.com/fanta1ty/TESign/blob/master/LICENSE) file for more info.
+
+### Author
+
+[@thinhnguyen](https://github.com/fanta1ty)
