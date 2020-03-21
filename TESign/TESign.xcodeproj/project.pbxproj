@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE2523AF2426390A0084314A /* TESign.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2523AD2426390A0084314A /* TESign.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE2523D6242639EC0084314A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2523D5242639EC0084314A /* AppDelegate.swift */; };
 		CE2523DF242639ED0084314A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2523DE242639ED0084314A /* Assets.xcassets */; };
 		CE2523E2242639ED0084314A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2523E0242639ED0084314A /* LaunchScreen.storyboard */; };
+		CE2523E924263C450084314A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2523E824263C450084314A /* UIViewController+Ext.swift */; };
+		CE2523EB24263DAC0084314A /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2523EA24263DAC0084314A /* UIColor+Ext.swift */; };
+		CE2523ED242643540084314A /* TESignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2523EC242643540084314A /* TESignView.swift */; };
+		CE2523EF242643F30084314A /* TESignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2523EE242643F30084314A /* TESignViewController.swift */; };
+		CE2523F1242644230084314A /* TESignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE2523F0242644230084314A /* TESignViewController.xib */; };
+		CE2523F324264A620084314A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2523F224264A620084314A /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE2523AA2426390A0084314A /* TESign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TESign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE2523AD2426390A0084314A /* TESign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESign.h; sourceTree = "<group>"; };
 		CE2523AE2426390A0084314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2523D3242639EC0084314A /* TESignExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TESignExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2523D5242639EC0084314A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE2523DE242639ED0084314A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2523E1242639ED0084314A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2523E3242639ED0084314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2523E824263C450084314A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		CE2523EA24263DAC0084314A /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		CE2523EC242643540084314A /* TESignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESignView.swift; sourceTree = "<group>"; };
+		CE2523EE242643F30084314A /* TESignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESignViewController.swift; sourceTree = "<group>"; };
+		CE2523F0242644230084314A /* TESignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TESignViewController.xib; sourceTree = "<group>"; };
+		CE2523F224264A620084314A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +58,7 @@
 				CE2523AC2426390A0084314A /* TESign */,
 				CE2523D4242639EC0084314A /* TESignExample */,
 				CE2523AB2426390A0084314A /* Products */,
+				CE2523F4242652D50084314A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,11 @@
 		CE2523AC2426390A0084314A /* TESign */ = {
 			isa = PBXGroup;
 			children = (
-				CE2523AD2426390A0084314A /* TESign.h */,
+				CE2523E724263C270084314A /* Extensions */,
 				CE2523AE2426390A0084314A /* Info.plist */,
+				CE2523EC242643540084314A /* TESignView.swift */,
+				CE2523EE242643F30084314A /* TESignViewController.swift */,
+				CE2523F0242644230084314A /* TESignViewController.xib */,
 			);
 			path = TESign;
 			sourceTree = "<group>";
@@ -74,10 +88,27 @@
 			children = (
 				CE2523D5242639EC0084314A /* AppDelegate.swift */,
 				CE2523DE242639ED0084314A /* Assets.xcassets */,
-				CE2523E0242639ED0084314A /* LaunchScreen.storyboard */,
 				CE2523E3242639ED0084314A /* Info.plist */,
+				CE2523E0242639ED0084314A /* LaunchScreen.storyboard */,
+				CE2523F224264A620084314A /* TestViewController.swift */,
 			);
 			path = TESignExample;
+			sourceTree = "<group>";
+		};
+		CE2523E724263C270084314A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE2523E824263C450084314A /* UIViewController+Ext.swift */,
+				CE2523EA24263DAC0084314A /* UIColor+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE2523F4242652D50084314A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +118,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2523AF2426390A0084314A /* TESign.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +171,7 @@
 				TargetAttributes = {
 					CE2523A92426390A0084314A = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					CE2523D2242639EC0084314A = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -171,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2523F1242644230084314A /* TESignViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2523E924263C450084314A /* UIViewController+Ext.swift in Sources */,
+				CE2523ED242643540084314A /* TESignView.swift in Sources */,
+				CE2523EF242643F30084314A /* TESignViewController.swift in Sources */,
+				CE2523EB24263DAC0084314A /* UIColor+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2523F324264A620084314A /* TestViewController.swift in Sources */,
 				CE2523D6242639EC0084314A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +375,7 @@
 		CE2523B32426390A0084314A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7HD6YC797B;
@@ -356,6 +394,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +404,7 @@
 		CE2523B42426390A0084314A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7HD6YC797B;
@@ -382,6 +423,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
