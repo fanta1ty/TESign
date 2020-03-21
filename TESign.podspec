@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "TESign"
-    spec.version      = "1.5"
+    spec.version      = "1.6"
     spec.summary      = "Signature component for iOS written in Swift."
     spec.description  = <<-DESC
 TESign helps user can draw the signature smoothly either by finger or by Apple pencil, he/she can also save and load the signature.
