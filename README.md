@@ -3,7 +3,7 @@ E-Sign component for iOS written in Swift
 
 [![Platform](https://img.shields.io/cocoapods/p/TESign)](https://cocoapods.org/pods/TESign)
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-brightgreen)](https://developer.apple.com/swift/)
-[![Version](https://img.shields.io/badge/pod-1.6-informational)](https://cocoapods.org/?q=TESign)
+[![Version](https://img.shields.io/badge/pod-1.7-informational)](https://cocoapods.org/?q=TESign)
 [![License](http://img.shields.io/badge/license-MIT-blue)](https://github.com/fanta1ty/TESign/blob/master/LICENSE)
 [![Email](https://img.shields.io/badge/contact-@thinhnguyen12389@gmail.com-blue)](thinhnguyen12389@gmail.com)
 
