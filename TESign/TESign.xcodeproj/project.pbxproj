@@ -8,16 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		CE2523AF2426390A0084314A /* TESign.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2523AD2426390A0084314A /* TESign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE2523D6242639EC0084314A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2523D5242639EC0084314A /* AppDelegate.swift */; };
+		CE2523DF242639ED0084314A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2523DE242639ED0084314A /* Assets.xcassets */; };
+		CE2523E2242639ED0084314A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2523E0242639ED0084314A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE2523AA2426390A0084314A /* TESign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TESign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2523AD2426390A0084314A /* TESign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESign.h; sourceTree = "<group>"; };
 		CE2523AE2426390A0084314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2523D3242639EC0084314A /* TESignExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TESignExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2523D5242639EC0084314A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE2523DE242639ED0084314A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE2523E1242639ED0084314A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE2523E3242639ED0084314A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE2523A72426390A0084314A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2523D0242639EC0084314A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2523AC2426390A0084314A /* TESign */,
+				CE2523D4242639EC0084314A /* TESignExample */,
 				CE2523AB2426390A0084314A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2523AA2426390A0084314A /* TESign.framework */,
+				CE2523D3242639EC0084314A /* TESignExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +67,17 @@
 				CE2523AE2426390A0084314A /* Info.plist */,
 			);
 			path = TESign;
+			sourceTree = "<group>";
+		};
+		CE2523D4242639EC0084314A /* TESignExample */ = {
+			isa = PBXGroup;
+			children = (
+				CE2523D5242639EC0084314A /* AppDelegate.swift */,
+				CE2523DE242639ED0084314A /* Assets.xcassets */,
+				CE2523E0242639ED0084314A /* LaunchScreen.storyboard */,
+				CE2523E3242639ED0084314A /* Info.plist */,
+			);
+			path = TESignExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +112,37 @@
 			productReference = CE2523AA2426390A0084314A /* TESign.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CE2523D2242639EC0084314A /* TESignExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2523E4242639ED0084314A /* Build configuration list for PBXNativeTarget "TESignExample" */;
+			buildPhases = (
+				CE2523CF242639EC0084314A /* Sources */,
+				CE2523D0242639EC0084314A /* Frameworks */,
+				CE2523D1242639EC0084314A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TESignExample;
+			productName = TESignExample;
+			productReference = CE2523D3242639EC0084314A /* TESignExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CE2523A12426390A0084314A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = ThinhNguyen;
 				TargetAttributes = {
 					CE2523A92426390A0084314A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CE2523D2242639EC0084314A = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -112,6 +161,7 @@
 			projectRoot = "";
 			targets = (
 				CE2523A92426390A0084314A /* TESign */,
+				CE2523D2242639EC0084314A /* TESignExample */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +171,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2523D1242639EC0084314A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2523E2242639ED0084314A /* LaunchScreen.storyboard in Resources */,
+				CE2523DF242639ED0084314A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +193,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE2523CF242639EC0084314A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2523D6242639EC0084314A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE2523E0242639ED0084314A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE2523E1242639ED0084314A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE2523B02426390A0084314A /* Debug */ = {
@@ -309,6 +387,44 @@
 			};
 			name = Release;
 		};
+		CE2523E5242639ED0084314A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HD6YC797B;
+				INFOPLIST_FILE = TESignExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thinhNguyen.TESignExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE2523E6242639ED0084314A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HD6YC797B;
+				INFOPLIST_FILE = TESignExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thinhNguyen.TESignExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -326,6 +442,15 @@
 			buildConfigurations = (
 				CE2523B32426390A0084314A /* Debug */,
 				CE2523B42426390A0084314A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2523E4242639ED0084314A /* Build configuration list for PBXNativeTarget "TESignExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2523E5242639ED0084314A /* Debug */,
+				CE2523E6242639ED0084314A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
