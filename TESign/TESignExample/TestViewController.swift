@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import TESign
 
 class TestViewController: UIViewController {
     private let esignView = TESignView(frame: .zero)
@@ -41,6 +40,7 @@ extension TestViewController {
     @objc final private func onDoneBtn(_ sender: UIButton?) {
         if let esignImage = esignView.getSignatureAsImage() {
             // Got the E-Sign image
+            print(esignImage)
             print("Got the E-Sign Image")
         }
     }
